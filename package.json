@@ -7,12 +7,8 @@
     "start": "umi dev",
     "build": "umi build",
     "lint": "standard --verbose",
-    "fix": "standard --fix"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
+    "fix": "standard --fix",
+    "precommit": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -26,15 +22,15 @@
   },
   "homepage": "https://github.com/yinfxs/fano-react#readme",
   "dependencies": {
-    "antd": "^3.8.0",
-    "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.10",
-    "moment": "^2.22.2",
-    "qs": "^6.5.2"
+    "qs": "^6.5.2",
+    "umi": "^1.3.18",
+    "umi-plugin-dva": "^0.9.1",
+    "umi-plugin-polyfill": "^0.2.0",
+    "umi-plugin-routes": "^0.1.5"
   },
   "devDependencies": {
     "husky": "^0.14.3",
-    "standard": "^11.0.1",
-    "umi": "^1.3.17"
+    "standard": "^11.0.1"
   }
 }

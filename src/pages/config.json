@@ -1,0 +1,76 @@
+{
+  "colCount": 3,
+  "fields": [
+    {
+      "name": "name",
+      "type": "text",
+      "label": "姓名",
+      "props": {
+        "placeholder": "英文名中文名即可",
+        "required": "姓名不能为空"
+      }
+    },
+    {
+      "name": "score",
+      "type": "number",
+      "label": "积分",
+      "props": {
+        "placeholder": "请填写积分",
+        "required": "姓名不能为空"
+      }
+    },
+    {
+      "name": "age",
+      "type": "digit",
+      "label": "年龄"
+    },
+    {
+      "name": "position",
+      "type": "text",
+      "label": "职位"
+    },
+    {
+      "name": "sex",
+      "label": "性别",
+      "type": "radio",
+      "props": {
+        "defaultValue": "1",
+        "options": [
+          {
+            "label": "男",
+            "value": "1"
+          },
+          {
+            "label": "女",
+            "value": "2"
+          }
+        ]
+      }
+    },
+    {
+      "name": "phone",
+      "label": "办公电话",
+      "type": "text"
+    },
+    {
+      "name": "mobile",
+      "label": "手机号码",
+      "type": "text"
+    },
+    {
+      "name": "email",
+      "label": "电子邮箱",
+      "type": "text"
+    },
+    {
+      "name": "wechat",
+      "label": "即时通讯",
+      "type": "text"
+    },
+    {
+      "name": "companyName",
+      "label": "公司名称",
+      "type": "text"
+    }
+  ]
+}

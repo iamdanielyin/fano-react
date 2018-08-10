@@ -1,4 +1,4 @@
-import fetch from 'isomorphic-fetch'
+import fetch from 'dva/fetch'
 import { message } from 'antd'
 import _ from 'lodash'
 
