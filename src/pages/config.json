@@ -1,7 +1,6 @@
 {
-  "colCount": 3,
-  "fields": [
-    {
+  "maxCol": 2,
+  "fields": [{
       "name": "name",
       "type": "text",
       "label": "姓名",
@@ -22,7 +21,10 @@
     {
       "name": "age",
       "type": "digit",
-      "label": "年龄"
+      "label": "年龄",
+      "props": {
+        "requiredMark": true
+      }
     },
     {
       "name": "position",
@@ -35,8 +37,7 @@
       "type": "radio",
       "props": {
         "defaultValue": "1",
-        "options": [
-          {
+        "options": [{
             "label": "男",
             "value": "1"
           },
