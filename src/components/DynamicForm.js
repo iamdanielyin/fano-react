@@ -1,7 +1,7 @@
 import React from 'react'
 import _ from 'lodash'
-import { Form, Row, Col } from 'antd'
-import './DynamicForm.less'
+import { Form, Row, Col, Button } from 'antd'
+import styles from './DynamicForm.less'
 import text from './types/text'
 import hidden from './types/hidden'
 import digit from './types/digit'
@@ -24,6 +24,7 @@ class DynamicForm extends React.Component {
     this.state = {
       fieldsValue: {}
     }
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
   // 添加必填校验
   addRequiredRule (rules, required) {
@@ -82,8 +83,16 @@ class DynamicForm extends React.Component {
 
   render () {
     return (
-      <Form layout={'inline'} onSubmit={this.handleSubmit}>
+      <Form layout={'inline'}>
         <Row>{this.renderFields()}</Row>
+        <Row>
+          <Col>
+            <div className={styles.footer}>
+              <Button>取消</Button>
+              <Button type={'primary'} onClick={this.handleSubmit}>确定</Button>
+            </div>
+          </Col>
+        </Row>
       </Form>
     )
   }

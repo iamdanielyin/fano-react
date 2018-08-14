@@ -2,7 +2,9 @@ import { Input } from 'antd'
 
 export default field => {
   const fieldProps = field.props
-  const itemProps = {}
+  const itemProps = {
+    autoComplete: field.name
+  }
   if (fieldProps.placeholder) {
     itemProps.placeholder = fieldProps.placeholder
   }
